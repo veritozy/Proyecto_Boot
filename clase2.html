@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="nombre">
+        <br>
+        <input type="text" id="apellido">
+        <br>
+        <input type="text" id="cedula">
+        <br>
+        <input type="button" value="Enviar" onclick="imprimir_datos()">
+    </form>
+    <p id="parrafo">
+
+    </p>
+
+    <script>
+        function imprimir_datos(){
+            let name=document.getElementById('nombre').value;
+            let apel = document.getElementById('apellido').value;
+            let ci = document.getElementById('cedula').value;
+            let parrafo= document.getElementById('parrafo');
+            //alert('El nombre es '+name +"apellido" +apel +"cédula" +ci);
+            parrafo.innerHTML='<h1>' +name +'</h1>';
+            parrafo.innerHTML += '<h1>' + apel + '</h1>';
+            parrafo.innerHTML = parrafo.innerHTML +'<h1>' + ci + '</h1>';
+
+
+            
+        }
+    </script>
+</body>
+</html>

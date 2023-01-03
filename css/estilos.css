@@ -1,0 +1,20 @@
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.caja{
+    background: salmon;
+    color: beige;
+    padding: 10px;
+    text-align: center;
+}
+
+.caja2 i{
+    background: blue;
+    width: 100px;
+    height: 100px;
+}
